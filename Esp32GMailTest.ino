@@ -16,7 +16,7 @@ const char* password = "9128024126";
 uint8_t connection_state = 0;
 uint16_t reconnect_interval = 10000;
 
-EMailSender emailSend("alavimehdi.ca@gmail.com", "prfx pxsc hovi hory1");
+EMailSender emailSend("alavimehdi.ca@gmail.com", "prfx pxsc hovi hory1");//check password !!!!
 
 uint8_t WiFiConnect(const char* nSSID = nullptr, const char* nPassword = nullptr)
 {
@@ -73,7 +73,7 @@ void setup()
     message.subject = "Soggetto";
     message.message = "Ciao come stai<br>io bene.<br>www.mischianti.org";
 
-    EMailSender::Response resp = emailSend.send("alavimehdi.ca@gmail.com", message);
+    EMailSender::Response resp = emailSend.send("smalavixx@yahoo.com", message);// email receiver :smalavixx@yahoo.com sender alavimehdi.ca@gmail.com
 
     Serial.println("Sending status: ");
 
